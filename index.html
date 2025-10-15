@@ -408,9 +408,10 @@ header::after {
 }
 
 .main-navigation {
-  width: 700px;      /* задаёт конкретную ширину, например 800px */
-  margin: 0 auto;    /* выравнивание по центру экрана */
-  background-color: #fff; /* фон */
+  max-width: 700px;   /* максимальная ширина блока */
+  width: 100%;        /* ширина блока адаптивная — 100% от родителя */
+  margin: 0 auto;
+  background-color: #fff;
   padding: 10px 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   top: 0;
@@ -477,4 +478,5 @@ document.getElementById('imgModal').addEventListener('click', (e) => {
     <p>Email: <a href="mailto:info@uniquesamara.ru" class="email"><i class="fas fa-envelope"></i> info@uniquesamara.ru</a></p>
     <p>Адрес: г. Самара, ул. Примерная, 15</p>
   </body>
+
   </html>
