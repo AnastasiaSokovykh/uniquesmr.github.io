@@ -408,38 +408,52 @@ header::after {
 }
 
 .main-navigation {
-  max-width: 700px;           /* Максимальная ширина меню */
-  width: 100%;                /* Адаптивная ширина */
-  margin: 0 auto;             /* Центрирование */
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px 15px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-  overflow-x: auto;           /* Включаем горизонтальную прокрутку */
-  -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* Основные стили для списка */
 .main-navigation ul {
-  display: flex;              /* Горизонтальное расположение пунктов */
-  flex-wrap: nowrap;          /* Запрет переноса */
+  display: flex;
+  flex-wrap: nowrap;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  /* По умолчанию (мобильные) — пункты слева */
+  justify-content: flex-start;
 }
 
 .main-navigation li {
-  margin-right: 20px;         /* Отступы между пунктами */
-  white-space: nowrap;        /* Запрет переноса текста внутри пунктов */
+  margin-right: 20px;
+  white-space: nowrap;
 }
 
 .main-navigation a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  display: block;             /* Чтобы весь элемент был кликабельным */
+  display: block;
   padding: 5px 10px;
-  user-select: none;          /* по желанию — запрет выделения при прокрутке */
 }
+
+/* На больших экранах — выравниваем пункты по центру и отключаем прокрутку */
+@media (min-width: 768px) {
+  .main-navigation {
+    overflow-x: visible;  /* Убираем прокрутку */
+  }
+  
+  .main-navigation ul {
+    justify-content: center; /* Центрируем меню */
+  }
+}
+   
 .main-navigation a:hover {
   color: #007BFF; /* при наведении цвет */
   transform: scale(1.1); /* чуть увеличивается при наведении */
@@ -480,5 +494,6 @@ document.getElementById('imgModal').addEventListener('click', (e) => {
   </body>
 
   </html>
+
 
 
