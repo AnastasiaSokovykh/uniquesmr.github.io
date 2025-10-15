@@ -316,7 +316,7 @@ header::after {
     <li><a href="#services">Наши услуги</a></li>
     <li><a href="#gallery">Наши работы</a></li>
     <li><a href="#contacts">Контакты</a></li>
-  </ul>
+     </ul>
 </nav>
 
 
@@ -408,35 +408,38 @@ header::after {
 }
 
 .main-navigation {
-  max-width: 700px;           /* максимум ширины */
-  width: 100%;                /* адаптивная ширина */
-  margin: 0 auto;             /* центрирование */
-  background-color: #fff;     
+  max-width: 700px;           /* Максимальная ширина меню */
+  width: 100%;                /* Адаптивная ширина */
+  margin: 0 auto;             /* Центрирование */
   padding: 10px 15px;
+  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow-x: auto;           /* горизонтальная прокрутка при необходимости */
-  -webkit-overflow-scrolling: touch; /* плавность на iOS */
+
+  overflow-x: auto;           /* Включаем горизонтальную прокрутку */
+  -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
 }
 
 .main-navigation ul {
-  display: flex;              /* горизонтальный список */
-  flex-wrap: nowrap;           /* без переноса */
+  display: flex;              /* Горизонтальное расположение пунктов */
+  flex-wrap: nowrap;          /* Запрет переноса */
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .main-navigation li {
-  margin-right: 20px;         
-  white-space: nowrap;        /* предотвращает перенос текста */
+  margin-right: 20px;         /* Отступы между пунктами */
+  white-space: nowrap;        /* Запрет переноса текста внутри пунктов */
 }
 
 .main-navigation a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  display: block;             /* Чтобы весь элемент был кликабельным */
+  padding: 5px 10px;
+  user-select: none;          /* по желанию — запрет выделения при прокрутке */
 }
-
 .main-navigation a:hover {
   color: #007BFF; /* при наведении цвет */
   transform: scale(1.1); /* чуть увеличивается при наведении */
@@ -477,4 +480,5 @@ document.getElementById('imgModal').addEventListener('click', (e) => {
   </body>
 
   </html>
+
 
