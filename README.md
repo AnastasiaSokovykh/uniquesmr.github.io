@@ -1,2 +1,0 @@
-# uniquesmr.github.io
-uniquesmr
