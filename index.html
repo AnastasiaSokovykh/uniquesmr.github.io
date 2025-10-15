@@ -426,8 +426,8 @@ header::after {
   margin: 0;
   list-style: none;
 
-  /* По умолчанию (мобильные) — пункты слева */
   justify-content: flex-start;
+  min-width: max-content; /* добавлено */
 }
 
 .main-navigation li {
@@ -443,20 +443,22 @@ header::after {
   padding: 5px 10px;
 }
 
-/* На больших экранах — выравниваем пункты по центру и отключаем прокрутку */
+.main-navigation a:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+/* На больших экранах — центрируем и отключаем прокрутку */
 @media (min-width: 768px) {
   .main-navigation {
-    overflow-x: visible;  /* Убираем прокрутку */
+    overflow-x: visible;
   }
-  
+
   .main-navigation ul {
-    justify-content: center; /* Центрируем меню */
+    justify-content: center;
+    min-width: auto;  /* добавлено */
+    width: 100%;      /* добавлено */
   }
-}
-   
-.main-navigation a:hover {
-  color: #007BFF; /* при наведении цвет */
-  transform: scale(1.1); /* чуть увеличивается при наведении */
 }
 
 </style>
@@ -494,6 +496,7 @@ document.getElementById('imgModal').addEventListener('click', (e) => {
   </body>
 
   </html>
+
 
 
 
