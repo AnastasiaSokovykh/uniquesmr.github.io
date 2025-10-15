@@ -408,36 +408,33 @@ header::after {
 }
 
 .main-navigation {
-  max-width: 700px;   /* максимальная ширина блока */
-  width: 100%;        /* ширина блока адаптивная — 100% от родителя */
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 10px 30px;
+  max-width: 700px;           /* максимум ширины */
+  width: 100%;                /* адаптивная ширина */
+  margin: 0 auto;             /* центрирование */
+  background-color: #fff;     
+  padding: 10px 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  top: 0;
-  z-index: 1000;
+  overflow-x: auto;           /* горизонтальная прокрутка при необходимости */
+  -webkit-overflow-scrolling: touch; /* плавность на iOS */
 }
 
 .main-navigation ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; /* равномерное расположение по центру */
-  margin: 0;
+  display: flex;              /* горизонтальный список */
+  flex-wrap: nowrap;           /* без переноса */
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .main-navigation li {
-  
-  margin: 0 20px;
+  margin-right: 20px;         
+  white-space: nowrap;        /* предотвращает перенос текста */
 }
 
 .main-navigation a {
   text-decoration: none;
-  color: #333; /* цвет текста */
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #000;
+  font-weight: 500;
 }
 
 .main-navigation a:hover {
@@ -480,3 +477,4 @@ document.getElementById('imgModal').addEventListener('click', (e) => {
   </body>
 
   </html>
+
