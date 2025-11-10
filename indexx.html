@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Вакансия: Комплектатор отделочных материалов | UNIQUE</title>
+<!-- Google Fonts для современного шрифта -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<!-- Иконки соцсетей -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ccc;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Заголовок шапки */
+header {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+  }
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 3em;
+    color: #ffd700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    transition: transform 0.3s;
+}
+header h1:hover {
+    transform: scale(1.05);
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/* секции */
+.section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #ffd700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #ffd700;
+  width: 80px;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* Карточки с содержимым */
+.card {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+    margin-bottom: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+}
+
+/* списки */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* кнопка */
+.btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #000;
+    padding: 17px 40px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+/* подвал */
+footer {
+    background: rgba(0,0,0,0.6);
+    padding: 50px 20px;
+    text-align: center;
+    color: #999;
+}
+footer p {
+    margin: 10px 0;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 2em;
+    color: #999;
+    transition: color 0.3s, transform 0.2s;
+}
+.social-icons a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+/* Анимация появление блоков */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.section {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+.section:nth-child(odd) {
+    animation-delay: 0.3s;
+}
+.section:nth-child(even) {
+    animation-delay: 0.6s;
+}
+
+/* Адаптивность */
+@media(max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .btn {
+    padding: 12px 24px;
+    font-size: 1.2em;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Вакансия: Комплектатор отделочных материалов</h1>
+  <p>г. Самара | Компания: <strong>UNIQUE</strong> — бутик отделочных материалов и ремонта, дружелюбный коллектив и современные офисы</p>
+</header>
+
+<!-- О компании -->
+<section class="section">
+  <h2>О компании</h2>
+  <div class="card">
+    <p>Мы — команда профессионалов, специализирующаяся на отделочных материалах и ремонте. Наш бутик — место, где собираются лучшие специалисты и качественные материалы. Хотите развивать свои навыки в сфере стройматериалов и логистики? Мы ищем вас!</p>
+  </div>
+</section>
+
+<!-- Обязанности -->
+<section class="section">
+  <h2>Обязанности</h2>
+  <div class="card">
+    <ul>
+      <li>Принимать заявки на отделочные материалы и формировать заказы.</li>
+      <li>Подбирать материалы по сметам и заданиям: плитка, краска, обои, сантехника и др.</li>
+      <li>Контролировать наличие и доставку у поставщиков.</li>
+      <li>Организовывать поставки на объект.</li>
+      <li>Проверять качество и комплектность товаров.</li>
+      <li>Вести учёт и отчётность (Sheets, CRM).</li>
+      <li>Работать с дизайнерами, подрядчиками и складом.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Требования -->
+<section class="section">
+  <h2>Требования</h2>
+  <div class="card">
+    <ul>
+      <li>Опыт с отделочными материалами и их номенклатурой.</li>
+      <li>Владение ПК, Excel/Sheets, мессенджеры.</li>
+      <li>Ответственность, внимательность и системность.</li>
+      <li>Коммуникабельность и умение вести переговоры.</li>
+      <li><strong>Преимущества:</strong> опыт в закупках и логистике, база поставщиков, CRM, 1С.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Условия -->
+<section class="section">
+  <h2>Условия работы</h2>
+  <div class="card">
+    <ul>
+      <li>Официальное трудоустройство.</li>
+      <li>График: 5/2, 10:00–19:00.</li>
+      <li>ЗП: от 55 000 руб. + премии за объекты.</li>
+      <li>Место: г. Самара, пр-т Карла Маркса, 246.</li>
+      <li>Современный офис, команда и возможности для роста.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Заявка -->
+<section style="text-align:center; margin: 60px 0;">
+  <a href="#contact" class="btn">Оставить заявку</a>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="section">
+  <h2>Контакты</h2>
+  <div class="card">
+    <p><strong>Компания:</strong> UNIQUE</p>
+    <p><strong>Адрес:</strong> г. Самара, пр-т Карла Маркса, 246</p>
+    <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+    <p><strong>Email:</strong> hr@unique-samara.ru</p>
+    <p>Следите за новостями и вакансиями в соцсетях:</p>
+    <div class="social-icons">
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Подвал -->
+<footer>
+  <p>&copy; 2024 UNIQUE — бутик отделочных материалов и ремонта</p>
+</footer>
+
+</body>
+</html>
